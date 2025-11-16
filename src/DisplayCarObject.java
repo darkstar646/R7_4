@@ -15,11 +15,11 @@ public class DisplayCarObject extends MyFrame2{
 			car0.move();
 			car1.move();
 			
-			if(car0.x>=300) {
+			if(car0.x>300) {
 				car0.stop();
 			}
 			
-			if(car1.x<=300) {
+			if(car1.x<300) {
 				car1.stop();
 			}
 			
