@@ -15,13 +15,16 @@ public class DisplayCarObject extends MyFrame2{
 			car0.move();
 			car1.move();
 			
-			if(car0.x>300) {
+			if(car0.x>=300+2*32/8) {
 				car0.stop();
 			}
 			
-			if(car1.x<300) {
+			if(car1.x<=300-2*32/8) {
 				car1.stop();
 			}
+			
+			System.out.println(car0.x);
+			System.out.println(car1.x);
 			
 			sleep(0.1);
 			
